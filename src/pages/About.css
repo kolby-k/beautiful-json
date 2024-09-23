@@ -1,0 +1,196 @@
+/* About.css */
+
+/* General Styles */
+.about-page {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #949494;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-page a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.about-page a:hover {
+  text-decoration: underline;
+}
+
+/* Header Section */
+.about-header {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #464646;
+}
+
+.about-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 1.2em;
+  color: #949494;
+}
+
+/* Content Sections */
+.about-content,
+.about-features,
+.about-privacy {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column; /* Keep flex-direction: column */
+}
+
+.about-content h2,
+.about-features h2,
+.about-privacy h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #e5e5e5;
+}
+
+.about-content p,
+.about-privacy p {
+  font-size: 1em;
+  color: #949494;
+}
+
+/* Additional Styles for the Differences List */
+.about-content ul {
+  list-style-type: disc;
+  margin-top: 0.5rem;
+  padding-left: 20px; /* Align discs properly */
+  display: block; /* Ensure ul remains a block-level element */
+}
+
+.about-content li {
+  margin-bottom: 10px;
+  display: list-item; /* Restore default list item behavior */
+}
+
+/* Features List */
+.about-features ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Align discs properly */
+  margin-top: 0.5rem;
+  display: block; /* Ensure ul remains a block-level element */
+}
+
+.about-features li {
+  margin-bottom: 10px;
+  display: list-item; /* Restore default list item behavior */
+}
+
+/* Code Block Styling */
+.code-block {
+  position: relative;
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+.code-block pre {
+  margin: 0;
+}
+
+.code-block code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.code-header p {
+  margin: 0;
+  color: #dcdcdc;
+}
+
+.code-header button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.code-header button:hover {
+  background-color: #0056b3;
+}
+
+.copy-feedback {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  color: #28a745;
+  font-size: 0.9em;
+}
+
+/* Footer Section */
+.about-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-footer p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2em;
+  }
+
+  .about-header p,
+  .about-content p,
+  .about-privacy p,
+  .about-footer p {
+    font-size: 0.9em;
+  }
+
+  .about-content h2,
+  .about-features h2,
+  .about-privacy h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-header h1 {
+    font-size: 1.8em;
+  }
+
+  .about-header p,
+  .about-content p,
+  .about-privacy p,
+  .about-footer p {
+    font-size: 0.85em;
+  }
+
+  .about-content h2,
+  .about-features h2,
+  .about-privacy h2 {
+    font-size: 1.3em;
+  }
+
+  .code-header button {
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
+}
