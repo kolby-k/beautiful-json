@@ -6,15 +6,21 @@ function ErrorBanner({ error, handleClose }) {
     <div
       style={{
         position: "absolute",
-        top: "4rem",
+        top: "25rem",
+        height: "20vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-between",
+        backgroundColor: "#555",
+        border: "1px solid #222",
+        borderRadius: "10px",
         padding: "1rem",
-        backgroundColor: "#000000",
       }}
     >
       <h1>Error</h1>
-      <p>{error}</p>
-
-      <Button title={"Hide"} handleClick={handleClose} />
+      <p style={{ fontSize: "16px", padding: "1rem" }}>{error}</p>
+      <Button title={"Close"} handleClick={handleClose} />
     </div>
   );
 }
